@@ -1,0 +1,16 @@
+{% comment %}
+  Reusable Selling Fast product badge.
+  Usage: {% render 'selling-fast-badge', product: product %}
+  Demo project for a Shopify Liquid portfolio.
+{% endcomment %}
+
+{% if product != blank %}
+  {% assign show_selling_fast = product.metafields.custom.selling_fast.value %}
+
+  {% if show_selling_fast == true %}
+    <span class="selling-fast-badge">
+      <span class="selling-fast-badge__dot" aria-hidden="true"></span>
+      Selling Fast
+    </span>
+  {% endif %}
+{% endif %}
