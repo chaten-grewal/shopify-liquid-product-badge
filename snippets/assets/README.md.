@@ -1,0 +1,35 @@
+Shopify Liquid — Selling Fast Product Badge
+Overview
+
+This project demonstrates a reusable Shopify Liquid product badge designed to highlight selected products in a Shopify storefront.
+
+The badge uses a product metafield to control visibility, allowing merchants to display the “Selling Fast” label only on products they choose.
+
+Features
+Reusable Shopify Liquid snippet
+Product-level visibility using a custom metafield
+Gold-inspired styling suitable for jewelry and retail storefronts
+Responsive CSS for smaller screens
+Semantic HTML and an accessible decorative indicator
+Technologies
+Shopify Liquid
+HTML
+CSS
+Shopify product metafields
+Project Structure
+snippets/selling-fast-badge.liquid — Liquid logic for displaying the badge
+assets/selling-fast-badge.css — badge styling
+Setup
+Create a product metafield definition with the namespace and key custom.selling_fast.
+Set its type to True or false.
+Enable the metafield for the products that should display the badge.
+Render the snippet in the appropriate product template using:
+
+{% render 'selling-fast-badge', product: product %}
+
+Include the CSS file in the theme so its styles are applied.
+Purpose
+
+This demonstration project explores reusable Shopify theme components and configurable product merchandising features.
+
+It was created as a learning and portfolio project to demonstrate Shopify Liquid concepts, storefront styling, and product-level customization.
